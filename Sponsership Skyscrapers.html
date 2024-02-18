@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style> 
+	* {
+        font-family: Pixel;
+    }
+
+    .header {
+        text-align: center;
+		top: 1000px;
+        padding: 38px;
+        border-bottom: solid black 3px;
+		 color:  black;
+		
+    }
+
+    .moving-image {
+        image-size: 10%;
+        left: 28px;
+        /* Removed transition property */
+    }
+
+    .brand {
+        float: left;
+        font-family: Verdana;
+        font-size: 20px;
+        color: black;
+        text-decoration: none;
+    }
+
+    .master {
+        position: absolute;
+        top: 100px;
+        left: 100px;
+        width: 100%;
+        height: 100%;
+        z-index: -100;
+    }
+
+    .menu a {
+        font-family: Arial;
+        font-size: 18px;
+        color: blue;
+        margin-right: 10px;
+        text-decoration: none;
+    }
+
+    .news {
+        position: absolute;
+        top: 1000px;
+        left: 113px;
+        font-family: Arial;
+        font-size: 18px;
+        color: darkblue;
+        margin-right: 10px;
+        text-decoration: none;
+		opacity: 0;
+
+    }
+	   .missing {
+        position: absolute;
+        top: 730px;
+        left: 940px;
+        font-family: Arial;
+        font-size: 18px;
+        color: darkblue;
+        margin-right: 10px;
+        text-decoration: none;
+		opacity: 00;
+
+    }
+		   .about {
+        position: absolute;
+        top: 570px;
+        left: 200px;
+        font-family: Arial;
+        font-size: 18px;
+        color: darkblue;
+        margin-right: 10px;
+        text-decoration: none;
+		opacity: 0;
+
+    }
+    .menu:nth-child(2) {
+        float: left;
+        margin-right: 10px;
+    }
+
+    .menu button {
+        font-family: Arial;
+        font-size: 18px;
+        color: black ;
+        background: none;
+        border: none;
+        cursor: pointer;
+        margin-right: 10px;
+        outline: none;
+    }
+
+    .leftCol {
+        float: left;
+        width: 31%;
+        padding: 1%;
+        background-color: lightblue;
+    }
+
+    .month {
+        float: left;
+        width: 31%;
+        padding: 1%;
+        background-color: #90EE90!important; /* Added !important to override any conflicting styles */
+    }
+
+    .rightCol {
+        float: right; /* Fixed the float direction */
+        width: 150px;
+        padding: 1%;
+        background-color: lightgreen;
+        display: none;
+    }
+
+    .counter {
+        font-family: Arial;
+        font-size: 16px;
+        color: darkblue;
+        margin-top: 10px;
+    }
+.green {
+    font-size: 18px;
+    color: green;
+    text-shadow: 
+        -1px -1px 0 white,  
+         1px -1px 0 white,
+        -1px  1px 0 white,
+         1px  1px 0 white; 
+}
+
+		
+		
+    .info {
+        font-family: Verdana;
+        font-size: 15px;
+        color: black;
+        margin-bottom: 20px;
+    }
+
+    .links a {
+        font-family: Arial;
+        font-size: 12px;
+        color: darkblue;
+        margin-right: 10px;
+    }
+
+    .links b {
+        top: 780px;
+        left: 10px;
+        width: 10%;
+        height: 400%;
+        font-family: Arial;
+        font-size: 12px;
+        color: darkblue;
+        position: absolute;
+        /* Added position absolute to use top and left properties */
+    }
+
+    .don {
+        position: absolute;
+        top: 870px;
+        left: 1125px;
+		color: black;
+    }
+body {
+            background-image: url('file:///C:/Users/daire/Downloads/ss%20home.png');
+            background-size: cover;
+            animation: changeBackground 3.5s infinite; /* Change the time and animation as needed */
+        }
+
+@keyframes changeBackground {
+            0% {
+                background-image: url('file:///C:/Users/daire/Downloads/ss%20home.png'); /* Add your first background image URL */
+            }
+
+            25% {
+                background-image: url('file:///C:/Users/daire/Downloads/ss%20home%202.png'); /* Add your second background image URL */
+            }
+
+            50% {
+                background-image: url('file:///C:/Users/daire/Downloads/ss%20home%203.png'); /* Add your third background image URL */
+            }
+
+            75% {
+                background-image: url('file:///C:/Users/daire/Downloads/ss%20home%204.png'); /* Add your fourth background image URL */
+            }
+
+            100% {
+                background-image: url('file:///C:/Users/daire/Downloads/ss%20home.png'); /* Back to the first background image */
+            }
+        }
+</style>
+</head>
+<body>
+
+<div class="header">
+    <h2>
+	<a href="file:///C:/Users/daire/Desktop/sponser.html"><img src="file:///C:/Users/daire/Downloads/sponsorship.png" class="falling-image" alt="Falling Image"></a>
+    </h2>
+    <h3>
+        <img src="https://see.fontimg.com/api/renderfont4/z84yD/eyJyIjoiZHciLCJoIjo5OCwidyI6MTUwMCwiZnMiOjY1LCJmZ2MiOiIjMDAwMDAwIiwiYmdjIjoiI0ZGRkZGRiJ9/U0tZU0NSQVBFUlM/public-pixel.png">
+    </h3>
+    <p>A BRAND NEW CITY</p>
+	<div class="green">
+	<p>Beta version 1.0</p>
+    </div>
+<div class="hidden-layer"></div>
+    
+
+       <div class="menu">
+        <a href="file:///C:/Users/daire/Desktop/City.html">City</a>
+        <a href="file:///C:/Users/daire/Desktop/HELP.html">HELP</a>
+        <a href="file:///C:/Users/daire/Desktop/Pros%20and%20cons.html">Pros and Cons</a>
+    </div>
+        <div class="news">
+            <button onclick="toggleRightCol()"><img
+                    src="file:///C:/Users/daire/Downloads/news.png"></button>
+        </div>
+		
+		<div class="missing">
+            <a href="file:///C:/Users/daire/Downloads/Missing.html"><img
+                    src="file:///C:/Users/daire/Downloads/news.png"></a>
+        </div>
+		<div class="about">
+            <a href="file:///C:/Users/daire/Downloads/Master%20about.html"><img
+                    src="file:///C:/Users/daire/Downloads/about%20warp.png"></a>
+        </div>
+
+        <div class="don">
+            <a href="file:///C:/Users/daire/Desktop/donations.html">Donations</a>
+        </div>
+    </div>
+<p id="dynamicText" style="position: absolute; left: 1034px; top: -10px;"></p>
+   <div class="content">
+        <div class="leftCol" id="starsOfWeek" onclick="toggleText('starsOfWeek')">
+            <!-- Initially show text1 -->
+            ✨STARS OF THE WEEK!✨:<br /><br /><br /><br /><br />Text 1
+        </div>
+
+        <div class="month" id="starsOfMonth" onclick="toggleText('starsOfMonth')">
+            <!-- Initially show text1 -->
+            🎇❤✨!STARS OF THE MONTH!✨❤🎇:<br /><br /><br /><br /><br />Text 1
+		
+        </div>
+		<div class="rightCol" id="rightCol">
+        <h1>📰Weekly News📰:</h1>
+            <h2> UPDATES</h2>
+            <h3>🌱Spring🌹</h3><br /><br />
+            <p>🌹Spring, spring, finally here! Lambs bleating, in your ear. For the city, the sky's are clear. For many companies, a great time of year! 🌱</p><br /><br /><br />
+                 
+                 <h4>Easter eggs🥚🥚</h4>
+            <p>There are many hidden easter eggs on Sponsorship Skyscrapers <a href="#ONE-DOWN🥚" id="easterEgg">🥚</a></p>
+            <p>The harder they are, the more rewarding, such as a free diamond skyscraper!</p>
+            <h5>💌Donations💌</h5>
+            <p>Showing love is here, so be a dear!</p>
+            <p>It's optional to donate, but if you're really nice DON'T WAIT (also, you will get star of the week!)</p>
+              <button onclick="changeUsername()">Change Username</button>
+    </div>
+
+    <!-- Your JavaScript code here -->
+    <script>
+	       let rightColVisible = false;
+        let keySequence = "";
+        let lastKeyTime = 0;
+        let passwordSet = false;
+        let password = "";
+        let textIndex = 0;
+        let textIndices = { 'starsOfWeek': 0, 'starsOfMonth': 0 };
+
+        const texts = {
+            'starsOfWeek': [
+                "✨STARS OF THE WEEK!✨:<br /> 💀, Squid, UwU, Woogle,:D",
+                "✨STARS OF THE WEEK!✨:<br /><br />You can become a star by donating or helping Master through email, there's many ways to become a star❤"
+                // Add more texts as needed
+            ],
+            'starsOfMonth': [
+                "🎇❤✨!STARS OF THE MONTH!✨❤🎇:<br /><br /> Ryan, 👽, Patrick's windows",
+                "🎇❤✨!STARS OF THE MONTH!✨❤🎇:<br /><br />To become a star of the month would be to buy a skyscraper over 4€, or to send a very useful email!❤"
+                // Add more texts as needed
+            ]
+        };
+
+        // Function to toggle between texts
+        function toggleText(divId) {
+            textIndices[divId] = (textIndices[divId] + 1) % texts[divId].length; // Toggle between texts
+            document.getElementById(divId).innerHTML = texts[divId][textIndices[divId]];
+        }
+
+        // Function to set the initial text content
+        window.onload = function () {
+            document.getElementById('starsOfWeek').innerHTML = texts['starsOfWeek'][0];
+            document.getElementById('starsOfMonth').innerHTML = texts['starsOfMonth'][0];
+        };
+
+        // Function to toggle right column visibility
+        function toggleRightCol() {
+            const rightCol = document.getElementById('rightCol');
+            rightColVisible = !rightColVisible;
+            rightCol.style.display = rightColVisible ? 'block' : 'none';
+        }
+
+        // Function to save the username
+        function saveUsername(username) {
+            localStorage.setItem('username', username);
+        }
+
+        // Function to change the username
+        function changeUsername() {
+            const newUsername = prompt("New name:");
+            if (newUsername) {
+                saveUsername(newUsername);
+                alert(`Your name is now: ${newUsername}`);
+            }
+        }
+
+        // Function to handle keydown event
+        
+
+        // Function to update dynamic text
+        function updateDynamicText() {
+            const dynamicTextElement = document.getElementById('dynamicText');
+            const dynamicTextLines = [
+                "Welcome to ....",
+                "Don't miss out on Sales-Saturday!",
+                "离开谷歌翻译💀",
+                "Don't be shy, buy!",
+                "Stealing this platform idea is kinda sad",
+                "We love you 👽",
+                "You are under the safe hands of the Master",
+                " I bet you can't find all 5 easter eggs",
+                "更多语言？plus de langues ? और अधिक भाषाएँ?  больше языков?      ",
+                "Here's a reminder of what this webpage is called 👇",
+                "The weekly news happens every week(ish)!😱",
+            ];
+            const randomIndex = Math.floor(Math.random() * dynamicTextLines.length);
+            dynamicTextElement.textContent = dynamicTextLines[randomIndex];
+        }
+
+        function checkFirstVisit() {
+            // Retrieve the 'visited' flag from local storage
+            const visitedFlag = localStorage.getItem('visited');
+
+            // Check if the 'visited' flag is null or undefined
+            if (visitedFlag === null || visitedFlag === undefined) {
+                // User is visiting for the first time
+                alert("Welcome, Sponsership Skysrapers is a new digital platrom showcasing you or your companies name to the WORLD by buying cheap Skysrapers, enjoy and have fun❤👍-Master.");
+
+                // Set the 'visited' flag in local storage
+                localStorage.setItem('visited', true);
+            } else {
+                // User has visited before
+                alert("Welcome back -Master!");
+            }
+        }
+
+        // Call the function when the page loads
+        checkFirstVisit();
+
+        document.addEventListener('DOMContentLoaded', function () {
+            let username = localStorage.getItem('username') || prompt("Enter ANY name (preferably your company):");
+
+            if (username) {
+                localStorage.setItem('username', username);
+                saveUsername(username); // Save the initial username
+            }
+
+            alert(`Welcome back ${username}-Master!`);
+            updateDynamicText();
+
+            var easterEggLink = document.getElementById('easterEgg');
+            easterEggLink.addEventListener('click', function (event) {
+                event.preventDefault(); // Prevent the default behavior of the link
+                alert('One down🥚');
+            });
+        });
+    </script>
+</body>
+</html>
